@@ -5,18 +5,19 @@ author: Your Name
 email: your-email@example.com
 
 # URL settings (update with your GitHub username)
-baseurl: "/blog"  # repository name
+baseurl: "/blog"
 url: "https://mattbuot.github.io"
 
 # Build settings
-theme: minima
+theme: jekyll-theme-clean-blog
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-paginate
 
-# Minima theme settings
-minima:
-  skin: auto  # auto switches between light/dark based on user preference
+# Pagination
+paginate: 5
+paginate_path: "/posts/page:num/"
 
 # Markdown settings
 markdown: kramdown
@@ -24,10 +25,17 @@ highlighter: rouge
 
 kramdown:
   syntax_highlighter: rouge
-  input: GFM  # GitHub Flavored Markdown
+  input: GFM
 
 # Permalink structure
 permalink: /:year/:month/:day/:title/
+
+# Social profiles (optional - uncomment and fill in as needed)
+# twitter_username: your_twitter
+# facebook_username: your_facebook
+# github_username: your_github
+# linkedin_username: your_linkedin
+# instagram_username: your_instagram
 
 # Exclude from build
 exclude:
@@ -35,3 +43,5 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENSE
+  - node_modules
+  - vendor

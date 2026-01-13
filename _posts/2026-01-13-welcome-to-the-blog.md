@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Welcome to the Blog"
+subtitle: "A space for AI research insights and ML theory"
 date: 2026-01-13
-categories: general
+background: '/img/posts/welcome.jpg'
 ---
 
 Welcome to my AI research blog! This is a space where I'll share thoughts on machine learning theory, deep learning, and the latest developments in AI research.
